@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: hsl(0, 100%, 64%);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: hsl(0, 100%, 64%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.main-content {
+    margin: 20px;
+}
+
+.top-content {
+    display: flex;
+    gap: 20px; /* Espaço entre o about-me e aside */
+}
+
+.main-content .main {
+    flex: 3;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .aside {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.profile-text {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+}
+
+.image-right {
+    border-radius: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-left {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para About Me */
+.about-me {
+    background-color: #eef9ff;
+    border-left: 5px solid hsl(0, 100%, 64%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    color: hsl(0, 100%, 64%);
+    font-size: 24px;
+    border-bottom: 2px solid hsl(0, 100%, 64%);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilo para Paraná */
+.state {
+    background-color: #f7f7f7;
+    border-left: 5px solid hsl(0, 70%, 50%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.state h2 {
+    color: hsl(0, 70%, 50%);
+    font-size: 24px;
+    border-bottom: 2px solid hsl(0, 70%, 50%);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.state p {
+    line-height: 1.6;
+    color: #333;
+}
+
+footer {
+    font-size: 14px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para a lista de cursos */
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card.completed {
+    border-left: 5px solid hsl(0, 70%, 50%);
+    background-color: #e6ffea;
+}
+
+.course-card.not-completed {
+    border-left: 5px solid hsl(0, 100%, 64%);
+    background-color: #ffe6e6;
+}
+
+/* Estilo para os botões de filtro */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 64%);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: hsl(0, 80%, 54%);
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-text {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        margin: 10px;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .main-content .main, .main-content .aside {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .state {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+
+    .course-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

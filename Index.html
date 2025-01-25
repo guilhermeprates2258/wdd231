@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD: Dynamic Web Fundamentals - Guilherme P. Batista</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <script src="scripts\javascript.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="profile-container">
+            <img src="images\gui.jpg" alt="Guilherme Batista Profile Picture" class="image-right" width="200" height="200">
+            <h1 class="profile-text">Guilherme P. Batista</h1>
+        </div>
+        <nav>
+            <a href="Index.html" aria-label="LinkedIn Profile">Home</a>
+            <a href="#" aria-label="chamber Platform">Chamber</a>
+            <a href="#" aria-label="GitHub Profile">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/guilherme-prates-batista/" aria-label="LinkedIn Profile">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="top-content">
+            <div class="main">
+                <div class="about-me">
+                    <h2>Course Work</h2>
+                    <div class="content-wrapper">
+                       <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <h2>Paraná, Brazil</h2>
+                <img src="images\low-angle-view-palm-trees-cloudy-sky-sunlight.jpg" alt="Palm Trees in Paraná"  width="200" height="200">
+                <p>Araucaria Trees</p>
+            </div>
+        </div>
+        
+        <div class="state">
+            <h2>Web Computer Programming Certificates</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div id="course-container" class="content-wrapper"></div>
+            <p id="total-credits"></p>
+        </div>
+    </main>    
+
+    <footer>
+        <p id="copyright">© 2024 Guilherme P. Batista</p>
+        <p id="last-modified"></p>
+    </footer>    
 </body>
 </html>
