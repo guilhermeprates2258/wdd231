@@ -1,0 +1,65 @@
+[
+    {
+        "nome": "Apple Inc.",
+        "endereco": "One Apple Park Way, Cupertino, CA, USA",
+        "telefone": "+1-800-692-7753",
+        "site": "https://www.apple.com",
+        "imagem": "apple.png",
+        "nivel": 3,
+        "descricao": "Empresa de tecnologia inovadora, criadora do iPhone e MacBook."
+    },
+    {
+        "nome": "Microsoft Corporation",
+        "endereco": "One Microsoft Way, Redmond, WA, USA",
+        "telefone": "+1-425-882-8080",
+        "site": "https://www.microsoft.com",
+        "imagem": "microsoft.png",
+        "nivel": 3,
+        "descricao": "Líder em software e serviços, criadora do Windows e Office."
+    },
+    {
+        "nome": "Google LLC",
+        "endereco": "1600 Amphitheatre Parkway, Mountain View, CA, USA",
+        "telefone": "+1-650-253-0000",
+        "site": "https://www.google.com",
+        "imagem": "google.png",
+        "nivel": 2,
+        "descricao": "Empresa líder em tecnologia, especializada em busca, IA e publicidade digital."
+    },
+    {
+        "nome": "Amazon.com, Inc.",
+        "endereco": "410 Terry Ave N, Seattle, WA, USA",
+        "telefone": "+1-888-280-4331",
+        "site": "https://www.amazon.com",
+        "imagem": "amazon.png",
+        "nivel": 3,
+        "descricao": "Maior varejista online do mundo e líder em computação em nuvem."
+    },
+    {
+        "nome": "Tesla, Inc.",
+        "endereco": "3500 Deer Creek Rd, Palo Alto, CA, USA",
+        "telefone": "+1-650-681-5000",
+        "site": "https://www.tesla.com",
+        "imagem": "tesla.png",
+        "nivel": 2,
+        "descricao": "Fabricante de veículos elétricos e soluções de energia renovável."
+    },
+    {
+        "nome": "Meta Platforms, Inc.",
+        "endereco": "1 Hacker Way, Menlo Park, CA, USA",
+        "telefone": "+1-650-543-4800",
+        "site": "https://www.meta.com",
+        "imagem": "meta.png",
+        "nivel": 1,
+        "descricao": "Empresa controladora do Facebook, WhatsApp e Instagram."
+    },
+    {
+        "nome": "Samsung Electronics",
+        "endereco": "129 Samsung-ro, Suwon-si, South Korea",
+        "telefone": "+82-2-2255-0114",
+        "site": "https://www.samsung.com",
+        "imagem": "samsung.png",
+        "nivel": 1,
+        "descricao": "Empresa líder em eletrônicos, criadora dos smartphones Galaxy."
+    }
+]
