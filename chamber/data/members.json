@@ -4,7 +4,7 @@
         "endereco": "One Apple Park Way, Cupertino, CA, USA",
         "telefone": "+1-800-692-7753",
         "site": "https://www.apple.com",
-        "imagem": "apple.png",
+        "imagem": "png-transparent-apple.png",
         "nivel": 3,
         "descricao": "Empresa de tecnologia inovadora, criadora do iPhone e MacBook."
     },
@@ -13,7 +13,7 @@
         "endereco": "One Microsoft Way, Redmond, WA, USA",
         "telefone": "+1-425-882-8080",
         "site": "https://www.microsoft.com",
-        "imagem": "microsoft.png",
+        "imagem": "logo-microsoft-4096.png",
         "nivel": 3,
         "descricao": "Líder em software e serviços, criadora do Windows e Office."
     },

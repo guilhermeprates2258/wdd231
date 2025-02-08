@@ -43,24 +43,51 @@
     </header>
 
     <main>
-        <h2> Diretório de Empresas</h2>
-        <div class="container">
-            <div class="view-toggle">
-                <button id="gridView" class="active">Grade</button>
-                <button id="listView">Lista</button>
+        <section class="hero">
+            <img src="images\Verde Laranja e Rosa Orgânico Corporativo PME Kit de Marketing Capa para Facebook.png" alt="Imagem Principal Responsiva">
+            <div class="hero-content">
+                <button class="cta">Ingressos para Palestras</button>
             </div>
-            <div id="directory" class="cards-container"></div>
+        </section>
+
+        <section class="info">
+            <div class="weather-card" id="weather">
+                <h2>Clima Atual</h2>
+                <p id="current-temp">Aguardando...</p>
+                <p id="current-condition">Aguardando...</p>
+            </div>
+            <div class="forecast-card" id="forecast">
+                <h2>Previsão do Tempo</h2>
+                <p id="forecast-today">Aguardando...</p>
+                <p id="forecast-week">Aguardando...</p>
+            </div>
+            <div class="events-card">
+                <h2>Eventos Futuros</h2>
+                <div class="event-list">Conteúdo de eventos aqui...</div>
+            </div>
+        </section>
+
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
+        
+        <article class="grid">
+            <section class="business-list" id="business-list">
+                <!-- Os cards das empresas serão carregados aqui via JavaScript -->
+            </section>
+        </article>
     </main>
+
     <footer>
         <p>Câmara de Comércio de Maringá</p>
         <p>Maringá, Paraná</p>
         <p>Email: info@maringachamber.org</p>
         <p>Phone: (44) 9 9871-3727</p>
         <div class="social-links">
-            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images\youtube-icon-logo-719479.webp" alt="YouTube"></a>
+            <a href="#"><img src="images\b1a3fab214230557053ed1c4bf17b46c-logo-do-cone-do-twitter.webp" alt="Twitter"></a>
+            <a href="#"><img src="images\linkedin.jpeg" alt="LinkedIn"></a>
         </div>
         <p id="last-modified"></p>
         <p id="year"></p>
