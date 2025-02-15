@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Câmara de Comércio de Maringá - Conectando empresas locais e promovendo o crescimento econômico.">
+    <meta name="author" content="Guilherme Prates Batista">
+    
+    <!-- Metatags para redes sociais (Facebook Open Graph) -->
+    <meta property="og:title" content="Câmara de Comércio de Maringá">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-image.jpg">
+    <meta property="og:url" content="https://www.maringachamber.org">
+    
+    <!-- Metatags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Câmara de Comércio de Maringá">
+    <meta name="twitter:description" content="Câmara de Comércio de Maringá - Conectando empresas locais e promovendo o crescimento econômico.">
+    <meta name="twitter:image" content="images/hero-image.jpg">
+
+    <title>Câmara de Comércio de Maringá</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="images/favicon_io/apple-touch-icon.png" alt="Logo da Câmara de Comércio">
+            <h1>Câmara de Comércio de Maringá</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Diretório</a></li>
+                <li><a href="join.html">Associação</a></li>
+                <li><a href="#">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-container">
+        <h1>Inscreva-se Agora</h1>
+        <form action="thankyou.html" method="GET">
+            <label for="first-name">Primeiro Nome</label>
+            <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+
+            <label for="last-name">Sobrenome</label>
+            <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+
+            <label for="organization-title">Título Organizacional</label>
+            <input type="text" id="organization-title" name="organization-title" required pattern="[A-Za-z\s-]{7,}" title="Título deve conter no mínimo 7 caracteres alfabéticos, espaços ou hifens." autocomplete="organization-title">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com" autocomplete="email">
+
+            <label for="phone">Número de Telefone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
+            <label for="business">Nome da Empresa/Organização</label>
+            <input type="text" id="business" name="business" required autocomplete="organization">
+
+            <label for="association-level">Nível de Associação</label>
+            <select id="association-level" name="association-level" required>
+                <option value="NP">NP (sem taxa)</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Prata</option>
+                <option value="gold">Ouro</option>
+            </select>
+
+            <label for="message">Descrição</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+        <!-- Add this part below the form for the modals and cards -->
+<div class="cards-container2">
+    <div class="card">
+        <h3>NP - Sem Taxa</h3>
+        <p>Sem custos, mas sem benefícios.</p>
+        <button class="modal-trigger" data-target="#np-modal">Mais Informações</button>
+    </div>
+    <div class="card">
+        <h3>Bronze</h3>
+        <p>Acesso básico a eventos e treinamento.</p>
+        <button class="modal-trigger" data-target="#bronze-modal">Mais Informações</button>
+    </div>
+    <div class="card">
+        <h3>Prata</h3>
+        <p>Publicidade em eventos e descontos.</p>
+        <button class="modal-trigger" data-target="#silver-modal">Mais Informações</button>
+    </div>
+    <div class="card">
+        <h3>Ouro</h3>
+        <p>Benefícios exclusivos e destaque na homepage.</p>
+        <button class="modal-trigger" data-target="#gold-modal">Mais Informações</button>
+    </div>
+</div>
+
+<!-- Modals for each membership level -->
+<div id="np-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>NP - Sem Taxa</h2>
+        <p>Sem custos e sem benefícios adicionais.</p>
+    </div>
+</div>
+
+<div id="bronze-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bronze</h2>
+        <p>Benefícios incluem acesso a eventos e treinamento básico.</p>
+    </div>
+</div>
+
+<div id="silver-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Prata</h2>
+        <p>Publicidade em eventos, desconto em ingressos, e mais.</p>
+    </div>
+</div>
+
+<div id="gold-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ouro</h2>
+        <p>Benefícios exclusivos, incluindo destaque na homepage.</p>
+    </div>
+</div>
+
+<script>
+// Modal functionality
+const modals = document.querySelectorAll('.modal');
+const modalTriggers = document.querySelectorAll('.modal-trigger');
+const closeButtons = document.querySelectorAll('.close');
+
+modalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const target = document.querySelector(trigger.dataset.target);
+        target.style.display = 'block';
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.modal').style.display = 'none';
+    });
+});
+
+// Animation for cards
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.style.animation = 'fadeIn 1s ease-in-out forwards';
+    });
+});
+</script>
+
+    </main>
+    <footer>
+        <p>Câmara de Comércio de Maringá</p>
+        <p>Maringá, Paraná</p>
+        <p>Email: info@maringachamber.org</p>
+        <p>Phone: (44) 9 9871-3727</p>
+        <div class="social-links">
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p id="last-modified"></p>
+        <p id="year"></p>
+    </footer>
+
+    <script>
+        // Set the timestamp when the form is loaded
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>

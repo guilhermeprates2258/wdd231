@@ -196,3 +196,28 @@ document.addEventListener("DOMContentLoaded", function () {
         gridViewBtn.classList.remove("active");
     });
 });
+
+// Modal functionality
+const modals = document.querySelectorAll('.modal');
+const modalTriggers = document.querySelectorAll('.modal-trigger');
+const closeButtons = document.querySelectorAll('.close');
+
+modalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (event) => {
+        const target = document.querySelector(trigger.dataset.target);
+        
+        // Pega o card e posiciona o modal abaixo dele
+        const card = trigger.closest('.card');
+        
+        // Define a posição do modal
+        target.style.display = 'block';
+        target.style.left = card.offsetLeft + 'px';  // Alinha à esquerda do card
+        target.style.top = card.offsetTop + card.offsetHeight + 10 + 'px'; // Coloca logo abaixo do card
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.modal').style.display = 'none';
+    });
+});

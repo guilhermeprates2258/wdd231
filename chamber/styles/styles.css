@@ -58,6 +58,7 @@ nav ul li a:hover {
     text-align: center;
     max-width: 1600px;
     margin: 0 auto;
+    margin-top:20px;
 }
 
 .hero img {
@@ -631,4 +632,351 @@ h2::after {
 
 .business a:hover {
     text-decoration: underline;
+}
+
+/* Estilização da página de inscrição */
+.join-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+}
+
+.join-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; /* Limita a largura do formulário */
+}
+
+.join-container input, .join-container select, .join-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.join-container button {
+    background-color: #2C3E50;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.join-container button:hover {
+    background-color: #FFD700;
+    color: #2C3E50;
+}
+
+/* Container para os cartões */
+.cards-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsivo */
+    gap: 20px;
+    width: 100%;
+    max-width: 800px; /* Limita a largura */
+    margin: 50px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease-in-out; /* Animação de hover */
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #2C3E50;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.modal-trigger {
+    background-color: #FFD700;
+    color: #2C3E50;
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-trigger:hover {
+    background-color: #2C3E50;
+    color: white;
+}
+
+/* Animação para os cartões */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação de fadeIn para os cartões */
+.card {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Modal - Pop-up com largura limitada e posicionado abaixo do cartão */
+.modal {
+    display: none; /* Inicia invisível */
+    position: absolute; /* Fica em posição absoluta em relação ao card */
+    top: 100%; /* Fica logo abaixo do cartão */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para garantir centralização */
+    width: 100%; /* Ajusta a largura para o conteúdo */
+    max-width: 500px; /* Define uma largura máxima */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px; /* Espaçamento entre o card e o modal */
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+    z-index: 10; /* Garante que o modal fique acima de outros elementos */
+}
+
+/* Modal - conteúdo */
+.modal-content {
+    padding: 20px;
+}
+
+/* Botão de fechar */
+.close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Container principal */
+.thank-you-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #4c4f56;
+    margin-bottom: 20px;
+}
+
+.thank-you-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #3e4e5e; /* Verde militar mais escuro para os títulos */
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4c5c68;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3e4e5e;
+}
+
+/* Footer */
+footer {
+    background-color: #3e4e5e;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    flex-shrink: 0; /* Impede que o footer se mova */
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+}
+
+#last-modified, #year {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .thank-you-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* Media Query para telas pequenas */
+@media (max-width: 768px) {
+    /* Ajuste do cabeçalho */
+    header {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 50px; /* Reduz o tamanho do logo */
+        margin-right: 10px;
+    }
+
+    /* Ajuste na navegação */
+    nav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        gap: 10px;
+    }
+
+    /* Ajuste na seção Hero */
+    .hero img {
+        max-height: 400px; /* Limita a altura da imagem */
+    }
+
+    /* Ajuste nos cards de empresas */
+    .business {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Ajustes nos cards de informações */
+    .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather-card, .forecast-card, .events-card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    /* Ajuste nos botões */
+    button {
+        width: 100%; /* Torna os botões com largura total */
+        padding: 10px 0;
+    }
+
+    #toggle-view {
+        width: 100%; /* Largura total para o botão de alternância */
+        padding: 10px 0;
+    }
+
+    /* Ajustes para os cards na visualização em lista */
+    .business-list.list-view .business {
+        width: 100%; /* Ocupa toda a largura disponível */
+        flex-direction: column;
+    }
+
+    /* Ajuste no footer */
+    footer {
+        padding: 15px;
+    }
+
+    footer .social-links {
+        gap: 10px;
+    }
+
+    footer .social-links a img {
+        width: 20px; /* Reduz o tamanho dos ícones sociais */
+        height: 20px;
+    }
+}
+
+/* Media Query para telas ainda menores (smartphones) */
+@media (max-width: 480px) {
+    /* Ajuste na fonte */
+    h2 {
+        font-size: 1.5rem; /* Tamanho menor para h2 */
+    }
+
+    .business h3 {
+        font-size: 1.2rem;
+    }
+
+    .business p {
+        font-size: 0.9rem;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    /* Ajuste na visualização dos cards em lista */
+    .business-list.list-view .business img {
+        width: 80px; /* Imagem menor */
+        height: 80px;
+    }
+
+    /* Ajustes nos cards principais */
+    .cards-container {
+        grid-template-columns: 1fr; /* Exibe os cards em uma única coluna */
+    }
 }
