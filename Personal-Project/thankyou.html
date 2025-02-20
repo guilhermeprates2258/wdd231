@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Guilherme Prates Batista">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Ferrera 3D Studio for 3D architectural visuals and projects. Get in touch with our team to learn more about our offerings.">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+    <script src="script/site.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+    <link rel="manifest" href="images\site.webmanifest">
+
+    <!-- Open Graph (Facebook & Instagram) -->
+    <meta property="og:title" content="Ferrera 3D Studio - Architectural Visuals">
+    <meta property="og:description" content="High-quality 3D architectural visuals that bring your projects to life. Explore our gallery and contact us for a quote.">
+    <meta property="og:image" content="https://www.seusite.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.seusite.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ferrera 3D Studio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ferrera 3D Studio - Architectural Visuals">
+    <meta name="twitter:description" content="High-quality 3D architectural visuals that bring your projects to life. Explore our gallery and contact us for a quote.">
+    <meta name="twitter:image" content="https://www.seusite.com/images/twitter-image.jpg">
+    <meta name="twitter:url" content="https://www.seusite.com">
+    <meta name="twitter:site" content="@seuTwitter">
+    <meta name="twitter:creator" content="@seuTwitter">
+
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="Logo_link" href="index.html" aria-label="Go to Home Page">
+                <img class="logo" src="images/ferrea22.png" alt="Ferrera 3D studio Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <hr class="rectangle-12">
+        <main class="thank-you-container">
+            <h1>Thank you for your contact! <span id="userName"></span></h1>
+            <p>We have received your message and will get in touch with you shortly.</p>
+            
+            <h2>Submitted details:</h2>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+            <p><strong>Message:</strong> <span id="userMessage"></span></p>
+            <p><strong>Chosen Plan:</strong> <span id="userPlan"></span></p>
+            
+            <a href="index.html" class="btn">Back to the homepage</a>
+
+        </main>
+
+        <script>
+            document.getElementById("userName").textContent = sessionStorage.getItem("name");
+            document.getElementById("userEmail").textContent = sessionStorage.getItem("email");
+            document.getElementById("userPhone").textContent = sessionStorage.getItem("phone");
+            document.getElementById("userMessage").textContent = sessionStorage.getItem("message");
+            document.getElementById("userPlan").textContent = sessionStorage.getItem("selectedPlan");
+        </script>
+        <hr class="rectangle-10">
+    
+        <footer>
+            <p id="copyright">Ferrera 3D Studio © 2022 - Guilherme P. Batista</p>
+            <p id="last-modified"></p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

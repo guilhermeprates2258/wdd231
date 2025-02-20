@@ -1,0 +1,68 @@
+
+  /* Para telas pequenas (móveis em retrato) */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;  /* Reduzir o tamanho da fonte para melhor leitura */
+      line-height: 1.4;
+    }
+    .container {
+      padding: 10px;  /* Adicionar preenchimento para o layout não ficar apertado */
+    }
+    h1 {
+      font-size: 1.5em;  /* Ajustar título para telas pequenas */
+      text-align: center;  /* Alinhar título ao centro */
+    }
+    p {
+      font-size: 1em;
+    }
+    .item {
+      margin-bottom: 15px;  /* Espaço entre os itens */
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Para telas grandes (desktops ou tablets em paisagem) */
+  @media screen and (min-width: 1200px) {
+    body {
+      font-size: 18px; /* Aumentar o tamanho da fonte em telas grandes */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;  /* Centralizar o conteúdo em telas grandes */
+    }
+    h1 {
+      font-size: 2em; /* Título maior em telas grandes */
+      text-align: left;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .item {
+      margin-bottom: 20px; /* Espaçamento maior entre os itens */
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #first {
+        flex-direction: column; /* Coloca a imagem e o texto em uma coluna em telas menores */
+        text-align: center; /* Alinha o conteúdo ao centro */
+    }
+
+    .first-msg {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px; /* Adiciona margem inferior para separar da imagem */
+    }
+
+    a.join {
+        font-size: 1.1rem;
+        padding: 12px 20px; /* Ajuste do padding para telas menores */
+    }
+}

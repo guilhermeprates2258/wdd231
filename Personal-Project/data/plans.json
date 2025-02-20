@@ -1,0 +1,210 @@
+[
+    {
+      "title": "Basic Plan",
+      "description": "Ideal for those who are just starting, includes essential features.",
+      "price": "R$ 99.99",
+      "services": [
+        "1 3D Project",
+        "Basic Consulting",
+        "Email Support"
+      ]
+    },
+    {
+      "title": "Intermediate Plan",
+      "description": "For growing companies, includes advanced features.",
+      "price": "R$ 199.99",
+      "services": [
+        "5 3D Projects",
+        "Advanced Consulting",
+        "Email and Phone Support",
+        "Monthly Reports"
+      ]
+    },
+    {
+      "title": "Advanced Plan",
+      "description": "For large companies, includes all features and priority support.",
+      "price": "R$ 399.99",
+      "services": [
+        "10 3D Projects",
+        "Premium Consulting",
+        "Dedicated Support",
+        "Monthly and Quarterly Reports",
+        "Access to Exclusive Features"
+      ]
+    },
+    {
+      "title": "Professional Plan",
+      "description": "Complete plan with all features for large companies.",
+      "price": "R$ 499.99",
+      "services": [
+        "Unlimited Projects",
+        "Unlimited Consulting",
+        "24/7 Dedicated Support",
+        "Detailed Reports",
+        "Full Access to All Features"
+      ]
+    },
+    {
+      "title": "Corporate Plan",
+      "description": "Ideal plan for large corporations with advanced needs.",
+      "price": "R$ 799.99",
+      "services": [
+        "Unlimited Projects",
+        "Custom Consulting",
+        "24/7 Dedicated Support",
+        "Custom Reports",
+        "Exclusive Training"
+      ]
+    },
+    {
+      "title": "Startup Plan",
+      "description": "Ideal plan for startups focusing on growth.",
+      "price": "R$ 149.99",
+      "services": [
+        "3 3D Projects",
+        "Strategic Consulting",
+        "Email Support",
+        "Market Analysis"
+      ]
+    },
+    {
+      "title": "Executive Plan",
+      "description": "Complete plan for executives with personalized service.",
+      "price": "R$ 699.99",
+      "services": [
+        "5 3D Projects",
+        "Strategic Consulting",
+        "Exclusive Support",
+        "Custom Reports"
+      ]
+    },
+    {
+      "title": "Premium Plan",
+      "description": "Premium plan with dedicated support and exclusive features.",
+      "price": "R$ 999.99",
+      "services": [
+        "10 3D Projects",
+        "Exclusive Consulting",
+        "24/7 Dedicated Support",
+        "Monthly and Quarterly Reports",
+        "Access to Exclusive Events"
+      ]
+    },
+    {
+      "title": "Business Plan",
+      "description": "Plan designed for medium-sized companies with specific needs.",
+      "price": "R$ 399.99",
+      "services": [
+        "7 3D Projects",
+        "Advanced Consulting",
+        "Email and Phone Support",
+        "Monthly Reports"
+      ]
+    },
+    {
+      "title": "Full Plan",
+      "description": "Complete plan for companies seeking high performance.",
+      "price": "R$ 1,199.99",
+      "services": [
+        "Unlimited Projects",
+        "Strategic Consulting",
+        "Exclusive Support",
+        "Detailed Analyses"
+      ]
+    },
+    {
+      "title": "3D Pro Plan",
+      "description": "Plan for professionals who need exclusive resources.",
+      "price": "R$ 599.99",
+      "services": [
+        "Unlimited 3D Projects",
+        "Technical Consulting",
+        "Personalized Support",
+        "Access to Advanced Features"
+      ]
+    },
+    {
+      "title": "Designer Plan",
+      "description": "Special plan for designers and architects.",
+      "price": "R$ 249.99",
+      "services": [
+        "5 3D Projects",
+        "Creative Consulting",
+        "Email Support",
+        "Trend Analysis"
+      ]
+    },
+  
+  
+  
+    {
+      "title": "Elite Plan",
+      "description": "Exclusive plan for high-end companies with the most advanced features.",
+      "price": "R$ 1,499.99",
+      "services": [
+        "Unlimited 3D Projects",
+        "Personalized Consulting",
+        "Priority Support",
+        "Tailored Reports",
+        "Access to VIP Events"
+      ]
+    },
+    {
+      "title": "Growth Plan",
+      "description": "Ideal for companies looking to scale, with additional growth-oriented services.",
+      "price": "R$ 799.99",
+      "services": [
+        "15 3D Projects",
+        "Growth Strategy Consulting",
+        "Email and Phone Support",
+        "Quarterly Reports",
+        "Growth Tracking Tools"
+      ]
+    },
+    {
+      "title": "Innovation Plan",
+      "description": "For companies focused on innovation and cutting-edge technologies.",
+      "price": "R$ 1,099.99",
+      "services": [
+        "10 3D Projects",
+        "Innovation Consulting",
+        "Exclusive Tech Support",
+        "Monthly and Quarterly Reports",
+        "Access to Beta Features"
+      ]
+    },
+    {
+      "title": "Flex Plan",
+      "description": "Flexible plan for businesses with fluctuating needs.",
+      "price": "R$ 299.99",
+      "services": [
+        "3 3D Projects per Month",
+        "Flex Consulting",
+        "Email Support",
+        "On-Demand Reports"
+      ]
+    },
+    {
+      "title": "Customized Plan",
+      "description": "Tailor-made plan for businesses with unique needs.",
+      "price": "Varies",
+      "services": [
+        "Custom Number of 3D Projects",
+        "Customized Consulting",
+        "24/7 Support",
+        "Bespoke Reports"
+      ]
+    },
+    {
+      "title": "Partner Plan",
+      "description": "Special plan for business partners and collaborations.",
+      "price": "R$ 899.99",
+      "services": [
+        "Unlimited 3D Projects",
+        "Co-Branding Consulting",
+        "Exclusive Support",
+        "Shared Reports",
+        "Co-hosted Events"
+      ]
+    }
+]
