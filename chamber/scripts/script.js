@@ -221,3 +221,51 @@ closeButtons.forEach(button => {
         button.closest('.modal').style.display = 'none';
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Carregar os dados de itens de interesse do arquivo JSON
+    fetch('data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector('.cards-container3');
+            data.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.innerHTML = `
+                    <h2>${item.title}</h2>
+                    <figure>
+                        <img src="images/${item.image}" alt="${item.title}">
+                    </figure>
+                    <address>${item.address}</address>
+                    <p>${item.description}</p>
+                    <button>Saiba mais</button>
+                `;
+                container.appendChild(card);
+            });
+        })
+        .catch(error => {
+            console.error("Erro ao carregar os dados dos itens de interesse:", error);
+        });
+
+    // Armazenar e mostrar a última visita usando localStorage
+    const lastVisitMessage = document.getElementById('last-visit-message');
+    const lastVisit = localStorage.getItem('lastVisit');
+    const now = Date.now();
+
+    if (!lastVisit) {
+        lastVisitMessage.innerText = 'Bem-vindo! Informe-nos se tiver alguma dúvida.';
+    } else {
+        const daysDiff = Math.floor((now - lastVisit) / (1000 * 3600 * 24));
+        if (daysDiff < 1) {
+            lastVisitMessage.innerText = 'Voltei logo! Incrível!';
+        } else {
+            lastVisitMessage.innerText = `Sua última visita foi há ${daysDiff} ${daysDiff === 1 ? 'dia' : 'dias'}.`;
+        }
+    }
+
+    localStorage.setItem('lastVisit', now);
+
+    // Exibir a data de modificação e o ano
+    document.getElementById('last-modified').textContent = `Última modificação: ${document.lastModified}`;
+    document.getElementById('year').textContent = new Date().getFullYear();
+});

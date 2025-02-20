@@ -440,7 +440,6 @@ footer .social-links a {
 footer .social-links a img {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1); /* Deixa os ícones brancos */
 }
 
 footer .social-links a:hover {
@@ -858,6 +857,110 @@ footer p {
     color: #bbb;
 }
 
+/* Layout para a página de Descubra */
+.content3 {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "cards"
+        "footer";
+}
+
+.cards-container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cria uma grade responsiva */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+.card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Não aplicar o efeito hover nas imagens para visualização móvel */
+@media (max-width: 640px) {
+    .card img:hover {
+        transform: none;
+    }
+}.card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Não aplicar o efeito hover nas imagens para visualização móvel */
+@media (max-width: 640px) {
+    .card img:hover {
+        transform: none;
+    }
+}
+/* Responsividade para telas pequenas */
+@media (max-width: 640px) {
+    .cards-container3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsividade para telas médias */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .cards-container3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 1025px) {
+    .cards-container3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .thank-you-container {
@@ -978,5 +1081,33 @@ footer p {
     /* Ajustes nos cards principais */
     .cards-container {
         grid-template-columns: 1fr; /* Exibe os cards em uma única coluna */
+    }
+}
+
+/* Mobile (320px - 640px) */
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cards-container {
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8";
+    }
+
+    .card img:hover {
+        transform: none;
+    }
+}
+
+/* Tela média (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .cards-container {
+        grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card8 card8";
     }
 }

@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Parque do Ingá",
+        "address": "Av. Dr. Carlos Correia, Maringá - PR",
+        "description": "Um dos maiores parques urbanos da cidade, oferecendo lazer e contato com a natureza.",
+        "image": "parque-do-inga.webp"
+    },
+    {
+        "title": "Catedral de Maringá",
+        "address": "Rua Néo Alves Martins, 2800, Maringá - PR",
+        "description": "A Catedral de Maringá é um dos maiores marcos arquitetônicos da cidade, com sua impressionante torre.",
+        "image": "catedral-de-maringa.webp"
+    },
+    {
+        "title": "Shopping Catuaí Maringá",
+        "address": "Av. Morangueira, 2388, Maringá - PR",
+        "description": "Um dos principais centros comerciais de Maringá, com diversas lojas, praça de alimentação e entretenimento.",
+        "image": "shopping-catai-maringa.webp"
+    },
+    {
+        "title": "Parque Ambiental de Maringá",
+        "address": "Av. Juscelino Kubitschek, Maringá - PR",
+        "description": "Área verde de lazer com trilhas e lago, ideal para caminhadas e passeios ao ar livre.",
+        "image": "parque-ambiental.webp"
+    },
+    {
+        "title": "Biblioteca Municipal de Maringá",
+        "address": "Av. XV de Novembro, 901, Maringá - PR",
+        "description": "Biblioteca com um vasto acervo literário e que promove diversos eventos culturais e educativos.",
+        "image": "biblioteca-municipal.webp"
+    },
+    {
+        "title": "Teatro Calil Haddad",
+        "address": "Rua Prof. João Alves, 485, Maringá - PR",
+        "description": "Teatro com programação cultural variada, incluindo peças de teatro, música e dança.",
+        "image": "teatro-calil-haddad.webp"
+    },
+    {
+        "title": "Restaurante Madalosso",
+        "address": "Av. Prudente de Moraes, 2420, Maringá - PR",
+        "description": "Restaurante renomado da cidade, conhecido por sua comida italiana e ambiente acolhedor.",
+        "image": "restaurante-madalosso.webp"
+    },
+    {
+        "title": "Museu de Arte de Maringá (MAAM)",
+        "address": "Av. XV de Novembro, 701, Maringá - PR",
+        "description": "Museu com exposições de arte moderna e contemporânea, além de eventos culturais e educacionais.",
+        "image": "museu-de-arte-maringa.webp"
+    }
+]
