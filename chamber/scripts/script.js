@@ -269,3 +269,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('last-modified').textContent = `Última modificação: ${document.lastModified}`;
     document.getElementById('year').textContent = new Date().getFullYear();
 });
+// Menu Hambúrguer
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
