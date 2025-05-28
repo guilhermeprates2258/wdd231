@@ -1141,3 +1141,90 @@ img, iframe {
         padding: 0 10px;
     }
 }
+/* Estilo básico para o menu */
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.menu-toggle .hamburger,
+.menu-toggle.active .hamburger::before,
+.menu-toggle.active .hamburger::after {
+    background-color: #333;
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+    content: "";
+    position: relative;
+    display: block;
+}
+
+.menu-toggle .hamburger::before {
+    top: -9px;
+}
+
+.menu-toggle .hamburger::after {
+    top: 3px;
+}
+
+/* Efeito do X quando ativo */
+.menu-toggle.active .hamburger {
+    background: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Esconder o menu em telas pequenas */
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        z-index: 50;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
