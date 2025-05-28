@@ -1111,3 +1111,33 @@ footer p {
         grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card8 card8";
     }
 }
+
+/* ===== Ajustes para evitar rolagem horizontal em telas pequenas ===== */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1100px) {
+    .cards-container, .cards-container3 {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main, header, footer {
+        padding: 0 10px;
+    }
+}
