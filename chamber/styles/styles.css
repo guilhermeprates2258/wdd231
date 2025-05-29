@@ -1143,3 +1143,80 @@ img, iframe {
 }
 /* Estilo básico para o menu */
 
+/* 🎯 Estilo para o botão de menu hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .hamburger,
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.menu-toggle .hamburger::before {
+    transform: translateY(-8px);
+}
+
+.menu-toggle .hamburger::after {
+    transform: translateY(5px);
+}
+
+.menu-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+}
+
+/* 🎯 Menu escondido em telas pequenas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        background-color: #2C3E50;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li a {
+        color: white;
+    }
+}
+
