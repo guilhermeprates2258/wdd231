@@ -339,7 +339,7 @@ button:hover {
     color: #007BFF;
     text-decoration: none;
     font-weight: bold;
-    word-break: break-word; /* Quebra links longos */
+    overflow-wrap: break-word; /* Quebra links longos */
 }
 
 .business-list.list-view .business a:hover {
