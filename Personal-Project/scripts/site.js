@@ -32,12 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Check localStorage availability
-if (typeof(Storage) !== "undefined") {
-    console.log('localStorage is available');
-} else {
-    console.log('localStorage is not available');
-}
 
 document.addEventListener("DOMContentLoaded", function() {
     fetch('data/plans.json')
@@ -59,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 container.appendChild(card);
             });
         })
-        .catch(error => console.error('Error loading plans:', error));
+        
 });
 
 function selectPlan(plan) {
